@@ -1,0 +1,63 @@
+                            INSTRUCTIONS ON HOW TO USE RENDERER
+                                    (OWNER'S MANUEL)
+
+
+             IF YOU DO NOT SEE YOUR OPERATING SYSTEM IN THESE INSTRUCTIONS
+
+     OPERATING SYSTEM FROM THE FUTURE
+That's sick bruv, your operating system didn't exist when I wrote this code. You
+can probably find a better program now and shouldn't be using this one.
+
+           YOU USE LINUX
+stop tainting my code with your presence and how did you get hold of this code?, I
+thought that the general public (normal people (non-linux users)) would guard this 
+code from y'all crazy Linux users
+
+
+                                   CHANGING THE MODEL
+  To change the model rendered:
+1. Find a model that you want to see rendered
+2. Save model as a .obj file (the way a .obj file is saved makes this important)
+3. Open modelName.obj in Text Edit or other text editing software (Right click on
+   model icon and hover over the menu "Open With" and select text editing software)
+4. Select all the text displayed using ⌘ + A on Mac or Ctrl + A on Windows
+5. Copy selected text (two methods described below):
+       a. Right click text and select copy
+       b. Use keyboard shortcut ⌘ + C on Mac or Ctrl + C on Windows
+6. Paste copied text in the file VerticesCoordinatesList by:
+       a. Select all text already in document if needed (see step 4 for more) and right
+          click text and select paste
+       b. Select all text already in document if needed (see step 4 for more) and use
+          ⌘ + V on Mac or Ctrl + V on Windows to paste copied text into file
+7. Save the project using ⌘ + S on Mac or Ctrl + S on Windows
+8. Run project by:
+       a. Clicking green arrow in top-right of screen in PyCharm
+       b. Using ^ + R on Mac or Shift + Alt + F10 on Windows
+
+
+                                        ROTATION
+  For rotation settings go to the object_3d.Object3D.movement definition and read the
+comment for settings on when the model rotates and when it doesn't and an explanation
+of how to select between the two.
+
+
+                                          FPS
+  The FPS of the renderer is set to the name of the window every frame so you know
+exactly how fast (or slow) the renderer is running.
+Bigger or more detailed models result in a slower FPS whereas smaller or low-poly
+models are perfect and run in the 50-60 range (60 FPS is set as the cap).
+FPS cap can be changed by going to main.SoftwareRender.__init__ definition and
+changing the labeled value.
+
+
+                                         COLOR
+
+                              WIREFRAME
+  The color of the model's wireframe can be changed by going to
+object_3d.Object3D.__init__ and reading the comment for instructions on how to
+change the color of the rendered object's wireframe.
+
+                             BACKGROUND
+  The color of the background of the window showing the render can be changed by
+going to main.draw and reading the comment for instructions on how to change the
+color of the window displaying the render.
